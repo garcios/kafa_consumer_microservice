@@ -1,0 +1,1000 @@
+2017-03-26 15:55:14.450  INFO 12032 --- [main] c.o.kafka.SpringBootKafkaApplication     : Starting SpringBootKafkaApplication on batcave with PID 12032 (D:\ProgWorkspace\SpringWork\spring-boot-kafka\target\classes started by Oscar in D:\ProgWorkspace\SpringWork\spring-boot-kafka)
+2017-03-26 15:55:14.454 DEBUG 12032 --- [main] c.o.kafka.SpringBootKafkaApplication     : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2017-03-26 15:55:14.454  INFO 12032 --- [main] c.o.kafka.SpringBootKafkaApplication     : No active profile set, falling back to default profiles: default
+2017-03-26 15:55:14.508  INFO 12032 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 15:55:14 SGT 2017]; root of context hierarchy
+2017-03-26 15:55:14.921  INFO 12032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$c5850fff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-26 15:55:15.123  INFO 12032 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-26 15:55:15.127  INFO 12032 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-03-26 15:55:15.142  INFO 12032 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 15:55:15.145  INFO 12032 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 15:55:15.205  INFO 12032 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2017-03-26 15:55:15.205  INFO 12032 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2017-03-26 15:55:15.222  INFO 12032 --- [main] c.o.kafka.SpringBootKafkaApplication     : Started SpringBootKafkaApplication in 1.008 seconds (JVM running for 1.839)
+2017-03-26 15:55:33.820  INFO 12032 --- [RMI TCP Connection(2)-192.168.230.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-03-26 15:55:33.821  INFO 12032 --- [RMI TCP Connection(2)-192.168.230.1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 15:55:14 SGT 2017]; root of context hierarchy
+2017-03-26 15:55:33.822  INFO 12032 --- [RMI TCP Connection(2)-192.168.230.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2017-03-26 15:55:33.825  INFO 12032 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2017-03-26 15:55:33.826  INFO 12032 --- [RMI TCP Connection(2)-192.168.230.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-26 16:25:04.504  INFO 7508 --- [main] c.o.kafka.SpringBootKafkaApplication     : Starting SpringBootKafkaApplication on batcave with PID 7508 (D:\ProgWorkspace\SpringWork\spring-boot-kafka\target\classes started by Oscar in D:\ProgWorkspace\SpringWork\spring-boot-kafka)
+2017-03-26 16:25:04.506 DEBUG 7508 --- [main] c.o.kafka.SpringBootKafkaApplication     : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2017-03-26 16:25:04.506  INFO 7508 --- [main] c.o.kafka.SpringBootKafkaApplication     : No active profile set, falling back to default profiles: default
+2017-03-26 16:25:04.540  INFO 7508 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 16:25:04 SGT 2017]; root of context hierarchy
+2017-03-26 16:25:04.856  INFO 7508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$eca3bea8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-26 16:25:05.035  INFO 7508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-26 16:25:05.038  INFO 7508 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-03-26 16:25:05.053  INFO 7508 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.230.128:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 16:25:05.057  INFO 7508 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.230.128:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 16:25:05.092  INFO 7508 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2017-03-26 16:25:05.092  INFO 7508 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2017-03-26 16:25:05.101  INFO 7508 --- [main] c.o.kafka.SpringBootKafkaApplication     : Started SpringBootKafkaApplication in 0.794 seconds (JVM running for 1.359)
+2017-03-26 16:25:05.262  INFO 7508 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator 172.17.0.3:9092 (id: 2147483647 rack: null) for group helloworld.
+2017-03-26 16:25:05.264  INFO 7508 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group helloworld
+2017-03-26 16:25:05.264  INFO 7508 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2017-03-26 16:25:05.264  INFO 7508 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group helloworld
+2017-03-26 16:25:26.267  INFO 7508 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : Marking the coordinator 172.17.0.3:9092 (id: 2147483647 rack: null) dead for group helloworld
+2017-03-26 16:26:09.151  INFO 7508 --- [RMI TCP Connection(2)-192.168.230.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-03-26 16:26:09.151  INFO 7508 --- [RMI TCP Connection(2)-192.168.230.1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 16:25:04 SGT 2017]; root of context hierarchy
+2017-03-26 16:26:09.152  INFO 7508 --- [RMI TCP Connection(2)-192.168.230.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2017-03-26 16:26:09.156  INFO 7508 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2017-03-26 16:26:09.159  INFO 7508 --- [RMI TCP Connection(2)-192.168.230.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-26 16:26:38.931  INFO 9136 --- [main] c.o.kafka.SpringBootKafkaApplication     : Starting SpringBootKafkaApplication on batcave with PID 9136 (D:\ProgWorkspace\SpringWork\spring-boot-kafka\target\classes started by Oscar in D:\ProgWorkspace\SpringWork\spring-boot-kafka)
+2017-03-26 16:26:38.934  INFO 9136 --- [main] c.o.kafka.SpringBootKafkaApplication     : No active profile set, falling back to default profiles: default
+2017-03-26 16:26:38.979  INFO 9136 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2438dcd: startup date [Sun Mar 26 16:26:38 SGT 2017]; root of context hierarchy
+2017-03-26 16:26:39.372  INFO 9136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$f3224855] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-26 16:26:39.626  INFO 9136 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-26 16:26:39.630  INFO 9136 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-03-26 16:26:39.647  INFO 9136 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.230.128:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 16:26:39.652  INFO 9136 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.230.128:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 16:26:39.694  INFO 9136 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2017-03-26 16:26:39.694  INFO 9136 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2017-03-26 16:26:39.717  INFO 9136 --- [main] c.o.kafka.SpringBootKafkaApplication     : Started SpringBootKafkaApplication in 1.113 seconds (JVM running for 2.966)
+2017-03-26 16:26:39.851  INFO 9136 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator 172.17.0.3:9092 (id: 2147483647 rack: null) for group helloworld.
+2017-03-26 16:26:39.853  INFO 9136 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group helloworld
+2017-03-26 16:26:39.854  INFO 9136 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2017-03-26 16:26:39.854  INFO 9136 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group helloworld
+2017-03-26 16:27:00.857  INFO 9136 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : Marking the coordinator 172.17.0.3:9092 (id: 2147483647 rack: null) dead for group helloworld
+2017-03-26 16:29:41.816  INFO 9136 --- [RMI TCP Connection(2)-192.168.230.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-03-26 16:29:41.817  INFO 9136 --- [RMI TCP Connection(2)-192.168.230.1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2438dcd: startup date [Sun Mar 26 16:26:38 SGT 2017]; root of context hierarchy
+2017-03-26 16:29:41.818  INFO 9136 --- [RMI TCP Connection(2)-192.168.230.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2017-03-26 16:29:41.823  INFO 9136 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2017-03-26 16:29:41.824  INFO 9136 --- [RMI TCP Connection(2)-192.168.230.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-26 16:29:48.428  INFO 12580 --- [main] c.o.kafka.SpringBootKafkaApplication     : Starting SpringBootKafkaApplication on batcave with PID 12580 (D:\ProgWorkspace\SpringWork\spring-boot-kafka\target\classes started by Oscar in D:\ProgWorkspace\SpringWork\spring-boot-kafka)
+2017-03-26 16:29:48.430  INFO 12580 --- [main] c.o.kafka.SpringBootKafkaApplication     : No active profile set, falling back to default profiles: default
+2017-03-26 16:29:48.469  INFO 12580 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 16:29:48 SGT 2017]; root of context hierarchy
+2017-03-26 16:29:48.860  INFO 12580 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$c5850fff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-26 16:29:49.030  INFO 12580 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-26 16:29:49.033  INFO 12580 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-03-26 16:29:49.048  INFO 12580 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.230.128:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 16:29:49.051  INFO 12580 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.230.128:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 16:29:49.086  INFO 12580 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2017-03-26 16:29:49.086  INFO 12580 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2017-03-26 16:29:49.097  INFO 12580 --- [main] c.o.kafka.SpringBootKafkaApplication     : Started SpringBootKafkaApplication in 0.873 seconds (JVM running for 1.278)
+2017-03-26 16:29:49.224  INFO 12580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator 172.17.0.3:9092 (id: 2147483647 rack: null) for group helloworld.
+2017-03-26 16:29:49.228  INFO 12580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group helloworld
+2017-03-26 16:29:49.229  INFO 12580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2017-03-26 16:29:49.229  INFO 12580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group helloworld
+2017-03-26 16:30:10.233  INFO 12580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : Marking the coordinator 172.17.0.3:9092 (id: 2147483647 rack: null) dead for group helloworld
+2017-03-26 16:32:47.257  INFO 12580 --- [RMI TCP Connection(2)-192.168.230.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-03-26 16:32:47.258  INFO 12580 --- [RMI TCP Connection(2)-192.168.230.1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 16:29:48 SGT 2017]; root of context hierarchy
+2017-03-26 16:32:47.259  INFO 12580 --- [RMI TCP Connection(2)-192.168.230.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2017-03-26 16:32:47.263  INFO 12580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2017-03-26 16:32:47.264  INFO 12580 --- [RMI TCP Connection(2)-192.168.230.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-26 16:37:51.342  INFO 13084 --- [main] c.o.kafka.SpringBootKafkaApplication     : Starting SpringBootKafkaApplication on batcave with PID 13084 (D:\ProgWorkspace\SpringWork\spring-boot-kafka\target\classes started by Oscar in D:\ProgWorkspace\SpringWork\spring-boot-kafka)
+2017-03-26 16:37:51.345  INFO 13084 --- [main] c.o.kafka.SpringBootKafkaApplication     : No active profile set, falling back to default profiles: default
+2017-03-26 16:37:51.377  INFO 13084 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 16:37:51 SGT 2017]; root of context hierarchy
+2017-03-26 16:37:51.690  INFO 13084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$c5850fff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-26 16:37:51.871  INFO 13084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-26 16:37:51.874  INFO 13084 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-03-26 16:37:51.888  INFO 13084 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.230.128:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 16:37:51.892  INFO 13084 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.230.128:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 16:37:51.926  INFO 13084 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2017-03-26 16:37:51.926  INFO 13084 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2017-03-26 16:37:51.939  INFO 13084 --- [main] c.o.kafka.SpringBootKafkaApplication     : Started SpringBootKafkaApplication in 0.793 seconds (JVM running for 1.194)
+2017-03-26 16:37:52.060  INFO 13084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator 172.17.0.3:9092 (id: 2147483647 rack: null) for group helloworld.
+2017-03-26 16:37:52.062  INFO 13084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group helloworld
+2017-03-26 16:37:52.063  INFO 13084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2017-03-26 16:37:52.063  INFO 13084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group helloworld
+2017-03-26 16:38:13.067  INFO 13084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : Marking the coordinator 172.17.0.3:9092 (id: 2147483647 rack: null) dead for group helloworld
+2017-03-26 16:38:20.433  INFO 13084 --- [RMI TCP Connection(2)-192.168.230.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-03-26 16:38:20.434  INFO 13084 --- [RMI TCP Connection(2)-192.168.230.1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 16:37:51 SGT 2017]; root of context hierarchy
+2017-03-26 16:38:20.435  INFO 13084 --- [RMI TCP Connection(2)-192.168.230.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2017-03-26 16:38:20.439  INFO 13084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2017-03-26 16:38:20.440  INFO 13084 --- [RMI TCP Connection(2)-192.168.230.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-26 16:40:51.362  INFO 944 --- [main] c.o.kafka.SpringBootKafkaApplication     : Starting SpringBootKafkaApplication on batcave with PID 944 (D:\ProgWorkspace\SpringWork\spring-boot-kafka\target\classes started by Oscar in D:\ProgWorkspace\SpringWork\spring-boot-kafka)
+2017-03-26 16:40:51.365  INFO 944 --- [main] c.o.kafka.SpringBootKafkaApplication     : No active profile set, falling back to default profiles: default
+2017-03-26 16:40:51.397  INFO 944 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 16:40:51 SGT 2017]; root of context hierarchy
+2017-03-26 16:40:51.711  INFO 944 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$c5850fff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-26 16:40:51.883  INFO 944 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-26 16:40:51.886  INFO 944 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-03-26 16:40:51.900  INFO 944 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.230.128:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 100000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 16:40:51.904  INFO 944 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.230.128:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 100000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 16:40:51.937  INFO 944 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2017-03-26 16:40:51.938  INFO 944 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2017-03-26 16:40:51.946  INFO 944 --- [main] c.o.kafka.SpringBootKafkaApplication     : Started SpringBootKafkaApplication in 0.78 seconds (JVM running for 1.179)
+2017-03-26 16:40:52.071  INFO 944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator 172.17.0.3:9092 (id: 2147483647 rack: null) for group helloworld.
+2017-03-26 16:40:52.073  INFO 944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group helloworld
+2017-03-26 16:40:52.074  INFO 944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2017-03-26 16:40:52.074  INFO 944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group helloworld
+2017-03-26 16:41:13.076  INFO 944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] o.a.k.c.c.internals.AbstractCoordinator  : Marking the coordinator 172.17.0.3:9092 (id: 2147483647 rack: null) dead for group helloworld
+2017-03-26 18:09:10.209  INFO 944 --- [RMI TCP Connection(2)-192.168.230.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-03-26 18:09:10.210  INFO 944 --- [RMI TCP Connection(2)-192.168.230.1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 16:40:51 SGT 2017]; root of context hierarchy
+2017-03-26 18:09:10.212  INFO 944 --- [RMI TCP Connection(2)-192.168.230.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2017-03-26 18:09:10.215  INFO 944 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2017-03-26 18:09:10.216  INFO 944 --- [RMI TCP Connection(2)-192.168.230.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-26 18:09:15.996  INFO 12484 --- [main] c.o.kafka.SpringBootKafkaApplication     : Starting SpringBootKafkaApplication on batcave with PID 12484 (D:\ProgWorkspace\SpringWork\spring-boot-kafka\target\classes started by Oscar in D:\ProgWorkspace\SpringWork\spring-boot-kafka)
+2017-03-26 18:09:15.999  INFO 12484 --- [main] c.o.kafka.SpringBootKafkaApplication     : No active profile set, falling back to default profiles: default
+2017-03-26 18:09:16.030  INFO 12484 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 18:09:16 SGT 2017]; root of context hierarchy
+2017-03-26 18:09:16.343  INFO 12484 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$4adcf872] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-26 18:09:16.516  INFO 12484 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-26 18:09:16.520  INFO 12484 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-03-26 18:09:16.535  INFO 12484 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [172.17.0.3:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 100000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 18:09:16.538  INFO 12484 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [172.17.0.3:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 100000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 18:09:16.572  INFO 12484 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2017-03-26 18:09:16.572  INFO 12484 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2017-03-26 18:09:16.581  INFO 12484 --- [main] c.o.kafka.SpringBootKafkaApplication     : Started SpringBootKafkaApplication in 0.833 seconds (JVM running for 1.247)
+2017-03-26 18:10:14.495  INFO 12484 --- [RMI TCP Connection(2)-192.168.230.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-03-26 18:10:14.495  INFO 12484 --- [RMI TCP Connection(2)-192.168.230.1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@58fdd99: startup date [Sun Mar 26 18:09:16 SGT 2017]; root of context hierarchy
+2017-03-26 18:10:14.496  INFO 12484 --- [RMI TCP Connection(2)-192.168.230.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2017-03-26 18:10:14.499  INFO 12484 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2017-03-26 18:10:14.500  INFO 12484 --- [RMI TCP Connection(2)-192.168.230.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-26 18:11:03.795  INFO 4396 --- [main] c.o.k.SpringBootKafkaApplicationTests    : Starting SpringBootKafkaApplicationTests on batcave with PID 4396 (started by Oscar in D:\ProgWorkspace\SpringWork\spring-boot-kafka)
+2017-03-26 18:11:03.796  INFO 4396 --- [main] c.o.k.SpringBootKafkaApplicationTests    : No active profile set, falling back to default profiles: default
+2017-03-26 18:11:03.826  INFO 4396 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@757277dc: startup date [Sun Mar 26 18:11:03 SGT 2017]; root of context hierarchy
+2017-03-26 18:11:04.140  INFO 4396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$def830d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-26 18:11:04.283  INFO 4396 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-03-26 18:11:04.299  INFO 4396 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [172.17.0.3:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 100000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 18:11:04.329  INFO 4396 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [172.17.0.3:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 100000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = helloworld
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-26 18:11:04.370  INFO 4396 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2017-03-26 18:11:04.370  INFO 4396 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2017-03-26 18:11:04.380  INFO 4396 --- [main] c.o.k.SpringBootKafkaApplicationTests    : Started SpringBootKafkaApplicationTests in 0.802 seconds (JVM running for 1.305)
+2017-03-26 18:11:04.428  INFO 4396 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@757277dc: startup date [Sun Mar 26 18:11:03 SGT 2017]; root of context hierarchy
+2017-03-26 18:11:04.429  INFO 4396 --- [Thread-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2017-03-26 18:11:04.433  INFO 4396 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1] essageListenerContainer$ListenerConsumer : Consumer stopped
